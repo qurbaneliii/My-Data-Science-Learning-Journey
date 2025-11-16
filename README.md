@@ -127,10 +127,4 @@ for i in range(3):
 
 Some variable names and comments appear in Azerbaijani, reflecting my native language. Code logic follows standard Python conventions.
 
-## License
 
-MIT
-
----
-
-*Learning Python one line at a time.*
