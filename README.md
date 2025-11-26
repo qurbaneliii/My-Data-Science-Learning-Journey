@@ -1,130 +1,58 @@
-# My-Data-Science-Learning-Journey
-Python and data science learning repository with hands-on exercises, practical projects, and comprehensive notes. Covering fundamentals to real-world applications.
-
-# Python Fundamentals & Practice
-
-A comprehensive collection of Python exercises and small projects covering core programming concepts, data structures, and practical applications.
+# My Data Science Learning Journey
+Hands-on Python practice and mini-projects tracking my progress from fundamentals to practical applications.
 
 ## Overview
+This repository contains Jupyter notebooks documenting Python concepts, exercises, and small projects. Each notebook focuses on specific topics with clear examples and explanations.
 
-This repository contains Jupyter notebooks documenting my journey through Python fundamentals. Each notebook focuses on specific concepts with practical implementations and real-world examples.
+## Repository Structure
+- `python learning journey/`
+  - `practice and experiment 1.ipynb`: Core Python concepts and data structures
+  - `Python task 1.ipynb`: Problem-solving with arithmetic, strings, and types
+  - `Python task 2.ipynb`: Sets, functions, comprehensions, and sorting
+  - `test and small projects 1.ipynb`: Mini-projects (calculator, login, grading, filters)
 
-## Contents
+## Highlights
+- **Data structures:** lists, tuples, sets; slicing, indexing, comprehensions
+- **Control flow:** conditionals, loops, input handling
+- **Functions:** signatures, scope, `global` usage
+- **Mini-projects:** calculator, login attempts, grade converter, data filters
 
-### [`practice and experiment 1.ipynb`](practice%20and%20experiment%201.ipynb)
-Core Python concepts and data structure operations.
-
-**Key Topics:**
-- List operations: indexing, slicing, modification
-- String manipulation and formatting
-- Tuples and immutability
-- List comprehensions
-- Iterative patterns with `for` loops
-- Built-in functions: `min()`, `max()`, `sum()`, `len()`
-
-### [`Python task 1.ipynb`](Python%20task%201.ipynb)
-Practical exercises focusing on problem-solving.
-
-**Implementations:**
-- Arithmetic calculations (area, age, discounts)
-- String concatenation and formatting
-- Type conversions
-- Variable swapping techniques
-
-### [`Python task 2.ipynb`](Python%20task%202.ipynb)
-Advanced data manipulation and functional programming.
-
-**Features:**
-- Set operations
-- Nested data structures
-- List transformations and sorting algorithms
-- Variable scope and the `global` keyword
-- Function definitions
-- List comprehensions for data transformation
-
-### [`test and small projects 1.ipynb`](test%20and%20small%20projects%201.ipynb)
-Mini-projects applying learned concepts.
-
-**Projects:**
-- **Calculator**: Basic arithmetic operations with operator detection
-- **Login System**: Authentication with attempt limiting (3 tries)
-- **Grade Converter**: Numeric to letter grade transformation
-- **Data Filters**: Even numbers, positive/negative classification, word length filtering
-
-## Setup
-
+## Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/python-fundamentals.git
-cd python-fundamentals
+git clone https://github.com/qurbaneliii/My-Data-Science-Learning-Journey.git
+cd My-Data-Science-Learning-Journey
 
-# Install Jupyter Notebook
+# Create and activate a virtual environment (recommended)
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install Jupyter (minimal requirements)
 pip install notebook
 
-# Launch
+# Launch Jupyter Notebook
 jupyter notebook
 ```
 
-## Requirements
+## Opening Notebooks
+Open any `.ipynb` in `python learning journey/` and run cells sequentially. Where input is required, sample values are indicated in the surrounding markdown.
 
-- Python 3.x
-- Jupyter Notebook
-
-## Usage
-
-Open any `.ipynb` file in Jupyter to view code, execute cells, and experiment with examples.
-
+## Example
 ```python
-# Example: List manipulation
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles.append('ducati')
-print(motorcycles)  # ['honda', 'yamaha', 'suzuki', 'ducati']
+motorcycles
 ```
 
-## Project Highlights
+## Notes & Language
+Some variable names/comments are in Azerbaijani (native language). All code follows standard Python conventions.
 
-### Simple Calculator
-```python
-nums1 = 12
-nums2 = 13
-operator = "*"
+## Roadmap
+- Add unit-test style checks for selected exercises
+- Introduce NumPy/Pandas basics and simple EDA
+- Expand mini-projects (CLI calculator, file I/O tasks)
 
-if operator == "+":
-    print(nums1 + nums2)
-elif operator == "-":
-    print(nums1 - nums2)
-elif operator == "*":
-    print(nums1 * nums2)
-elif operator == "/":
-    print(nums1 / nums2)
-```
-
-### Login System
-```python
-correct_username = "admin"
-correct_password = "1234"
-
-for i in range(3):
-    username = input("Enter username: ")
-    password = input("Enter password: ")
-    
-    if username == correct_username and password == correct_password:
-        print("Login successful")
-        break
-    else:
-        print(f"Incorrect. {2 - i} attempts left.")
-```
-
-## Skills Demonstrated
-
-- Data structure manipulation
-- Control flow and conditional logic
-- Function design and scope management
-- Iterative problem-solving
-- Code organization and documentation
-
-## Notes
-
-Some variable names and comments appear in Azerbaijani, reflecting my native language. Code logic follows standard Python conventions.
+## License
+Personal learning repository. Feel free to browse and learn; no warranty.
 
 
